@@ -12,3 +12,8 @@ count 'table_name', CACHE=>1000
 ```
 put 'table_name', 'row_name', 'column_value', 'value'
 ```
+### Alter
+You can operate on several column families:
+```
+hbase> alter ‘table_name’, {NAME => ‘family_1’, VERSIONS => 3}, {NAME => ‘family_2’, VERSIONS => 5}
+```
